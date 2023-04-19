@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SobreNosotrosActivity">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/bg_blue"
+      />
+
+    <TextView
+        android:layout_below="@id/view"
+        android:id="@+id/txtTituloVision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visión"
+        android:textSize="35sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#251C1C"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/viewBlueLine"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="#6D8FFF"
+        android:layout_below="@id/txtTituloVision"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVision"
+        android:text="La Visión es la de ofrecer un Software confiable y completo para satisfacer las necesidades de los clientes de la librería en el momento en el cual los mismos tengan la necesidad de acceder a información tales como stock de libros, uniformes, útiles escolares y precios. Lograr obtener un manejo satisfactorio para los clientes, con el fin de obtener bien organizadas todas las informaciones."
+        android:fontFamily="@font/raleway"
+        android:textColor="#818181"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/viewBlueLine"
+        android:padding="15dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTituloMision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVision"
+        android:text="Misión"
+        android:textSize="35sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#251C1C"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+    <View
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:background="#6D8FFF"
+        android:id="@+id/viewBlueLine2"
+        android:layout_below="@id/txtTituloMision"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtMision"
+        android:fontFamily="@font/raleway"
+        android:textColor="#818181"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Se tiene como Misión, el de ofrecer un Software accesible para todos los padres, estudiantes y profesores del Colegio en el momento en el cual los mismos deseen acceder a información, ya sea acerca de existencia de algún producto, precios, etc."
+        android:layout_below="@id/viewBlueLine2"
+        android:padding="15dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/txtMision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="6dp">
+        <ImageView
+            android:layout_below="@id/txtMision"
+            android:id="@+id/imgBackArrow"
+            android:layout_width="90dp"
+            android:padding="15dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_arrow_white"
+            android:background="#6D8FFF"/>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+</ScrollView>

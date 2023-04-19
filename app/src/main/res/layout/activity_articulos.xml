@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articulos"
+    android:background="#EFF3FF">
+
+
+    <TextView
+        android:id="@+id/txtArtículos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Artículos"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/imgBackArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="13dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_ionic_ios_arrow_round_back" />
+
+    <ImageView
+        android:id="@+id/imgBotonLibros"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/componente_4__1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtArtículos"/>
+
+
+    <ImageView
+        android:id="@+id/imgBotonUniformes"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/componente_uniformes"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgBotonLibros"/>
+
+    <ImageView
+        android:id="@+id/imgBotonUtiles"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/componente_utiles"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imgBotonUniformes"/>
+
+</RelativeLayout>
+</ScrollView>

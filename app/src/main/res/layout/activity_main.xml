@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/bg_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="BIENVENIDO"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/icono_colegio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBienvenido" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <Button
+            android:id="@+id/btnProductos"
+            android:layout_width="216dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Productos" />
+
+        <Button
+            android:id="@+id/btnSobreNosotros"
+            android:layout_width="216dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnProductos"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Sobre Nosotros" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="216dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/btnSobreNosotros"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Salir"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
